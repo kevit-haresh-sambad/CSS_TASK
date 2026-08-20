@@ -25,7 +25,6 @@
 }
 
 .img-div {
-    height: px;
     overflow: hidden;
     /* border: 1px solid black; */
 }
@@ -48,8 +47,6 @@
     padding-top: 24px;
     font-size: larger;
 }
-
-h1 {}
 
 .footer {
     background-color: rgb(253, 54, 4);
