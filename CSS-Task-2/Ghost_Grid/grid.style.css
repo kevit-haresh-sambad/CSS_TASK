@@ -51,6 +51,21 @@ body {
   align-items: center;
 }
 
+.nav__item
+{
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav__item:hover
+{
+  color: #d2d3d5;
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+
 .nav_right {
   display: flex;
   justify-content: flex-end;
@@ -72,6 +87,7 @@ body {
   font-weight: 500;
   font-size: 1.1rem;
   border: none;
+  cursor: pointer;
 }
 
 .header__content {
@@ -112,11 +128,16 @@ body {
 
 .content__welcome {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: 1.8fr 1fr;
   gap: 32px;
-  padding: 24px;
-  padding-top: 48px;
+  /* padding: 24px; */
+ padding-block: 44px;
 }
+
+.welcome__data {
+  padding-right: 51px;
+}
+
 
 .welcome__data * {
   padding-block: var(--welcome-padding);
@@ -125,6 +146,8 @@ body {
 .welcome__img {
   max-width: 100%;
   height: auto;
+  object-fit: cover;
+  display: block;
 }
 
 .welcome__data__h2 {
@@ -138,8 +161,8 @@ body {
   /* min-width: 1200px; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 24px;
-  padding: 24px;
+  /* gap: 24px; */
+  padding-block: 24px;
 }
 
 .post__card {
@@ -151,8 +174,10 @@ body {
 }
 
 .post__card__img {
+  display: block;
   max-width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 .post__card__header__title {
@@ -168,7 +193,7 @@ body {
 }
 
 .post__card__detail {
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .post__card__footer {
@@ -194,9 +219,9 @@ body {
 .template__article {
   display: grid;
   /* grid-template-columns: repeat(3, 1fr); */
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 0.3150fr));
   gap: 24px;
-  padding: 24px;
+  padding-block: 24px;
 }
 
 .article {
@@ -206,7 +231,10 @@ body {
 
 .article__section__img {
   max-width: 100%;
+  width: 100%;
   padding-bottom: 24px;
+  object-fit: cover;
+  height: 240px;
 }
 
 /* .article__section *{
@@ -216,6 +244,8 @@ body {
 .article__section__content,
 .article__section__content > * {
   padding-bottom: 12px;
+  font-size: 1em;
+
 }
 
 .article__section__header__info {
